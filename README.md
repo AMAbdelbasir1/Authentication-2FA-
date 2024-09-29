@@ -40,8 +40,7 @@ This is a Node.js application that demonstrates how to implement Two-Factor Auth
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/AMAbdelbasir1/Authentication-2FA-.git
    ```
 
 2. Install the necessary dependencies:
