@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2FA Setup</title>
+  </head>
+  <body>
+    <h1>Setup Two-Factor Authentication</h1>
+    <p>Scan the QR code with Google Authenticator:</p>
+    <img src="<%= qrCodeUrl %>" alt="QR Code" />
+    <p>Or enter the code manually:</p>
+    <p><%= secret %></p>
+    <h2>Enter the code from Google Authenticator:</h2>
+    <form action="/2fa/verify" method="POST">
+      <label for="token">Token:</label>
+      <input type="text" id="token" name="token" required />
+      <button type="submit">Verify</button>
+    </form>
+  </body>
+</html>
